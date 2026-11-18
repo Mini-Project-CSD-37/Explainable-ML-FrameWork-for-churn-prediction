@@ -1,0 +1,7 @@
+venv/
+.venv/
+__pycache__/
+.vercel/
+*.py[cod]
+Pipfile-original.txt
+requirements-original.txt

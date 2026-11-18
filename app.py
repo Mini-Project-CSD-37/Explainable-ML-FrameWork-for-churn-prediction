@@ -13,7 +13,11 @@ from flask import Flask, render_template, request
 from matplotlib.patches import Circle, Wedge
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "model_rfc.pkl")
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "models",
+    os.environ.get("CHURN_MODEL_FILE", "model_rfc.pkl")
+)
 
 app = Flask(__name__)
 

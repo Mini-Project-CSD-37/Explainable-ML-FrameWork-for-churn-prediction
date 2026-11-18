@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "app.py": {
+      "excludeFiles": "{venv/**,.venv/**,.git/**,.vercel/**,__pycache__/**,data/**,plots/**,main.ipynb,models/model_rfc.pkl,models/mlp_model.pkl,models/mlp_model_scratch.pt,models/explainer_rfc.bz2,models/explainer_mlp.bz2}"
+    }
+  }
+}
